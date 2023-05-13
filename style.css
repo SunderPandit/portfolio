@@ -1,0 +1,112 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  @font-face {
+	font-family: 'Comic Sans';
+	src: url('comici.ttf') format('truetype');
+  }  
+  @font-face {
+	font-family: 'Eczar-Semibold';
+	src: url('Eczar-SemiBold.ttf') format('truetype');
+  }  
+  /* Global styles */
+  body {
+	font-family: sans-serif;
+	background-color: #000000;
+	background-image: url("#");
+	background-repeat: repeat;
+	background-size: cover;
+  }
+  
+  .center {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+  }
+  
+  img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%; /* add circular border radius */
+	overflow: hidden; /* hide any content outside the circle */
+  }
+  
+  h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 1rem 0;
+	font-family: 'Comic Sans', sans-serif;
+	color: #f1f1f1;
+  }
+  
+  h3 {
+	text-align: center;
+	color: #f1f1f1;
+	font-size: 1.2rem;
+	margin: 1rem 0;
+	font-family: 'Eczar-semibold', sans-serif;
+  }
+  
+  .social {
+	text-align: center;
+	margin: 2rem 0;
+  }
+  
+  .social h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+  }
+  
+  .social ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .social li {
+	margin: 0 0.5rem;
+  }
+  
+  .social a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.5rem;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .social a:hover {
+	color: #0077b5;
+  }
+  
+  .br {
+	text-align: center;
+	margin: 2rem 0;
+  }
+  
+  .br h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+  }
+  .br {
+	text-align: center;
+	margin: 2rem 0;
+	background-color: #ff0000; /* set background color to red */
+  }
+  
+  .bp {
+	text-align: center;
+	margin: 2rem 0;
+	background-color: #f1f1f1; /* set background color to light gray */
+  }
+  
+  h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	color: #000; /* set text color to black */
+	color: #f1f1f1;
+  }
+  
