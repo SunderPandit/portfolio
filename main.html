@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,71 +8,119 @@
 	<title>Sunder Pandit</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="style.css">
-	<script src = "script.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="info.scss">
+	<link rel="stylesheet" href="info.css">
+	<link rel="stylesheet" href="info.css.map">
 </head>
+
 <body>
-	<body>	 
+
+	<body>
 		<nav class="navbar">
 			<ul class="navbar-menu">
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="middle.html">Info</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="middle.html">Info</a></li>
 			</ul>
-		  </nav> 
+		</nav>
+		<video id="bg-video" autoplay loop muted>
+			<source src="Untitled design (2).mp4" type="video/mp4">
+		</video>
 		<div class="center">
-		  <img src="sunder pandit ji.jpg" height="200" width="200" alt="Your Image">
+			<img src="sunder pandit ji.jpg" height="200" width="200" alt="Your Image">
 		</div>
 		<div id="load-container">
 			<div class="row">
-			  <div class="col-md-12 text-center">
-				<h3 class="animate-charcter">Sunder Pandit</h3>
-			  </div>
+				<div class="col-md-12 text-center">
+					<h3 class="animate-charcter">Sunder Pandit</h3>
+				</div>
 			</div>
-		  </div>
-		  <div class="container">
+		</div>
+		<br>
+		<br>
+		<input type="checkbox" id="moreInfo">
+
+		<div class="mi-outer">
+			<div class="mi">
+				<div class="mi-flap2"></div>
+				<label for="moreInfo" class="mi-flap1"></label>
+				<div class="mi-flap5">
+					<div class="mi-info"></div>
+				</div>
+				<div class="mi-flap4">
+					<div class="mi-info">
+						<label for="moreInfo" class="mi-close">X</label>
+					</div>
+				</div>
+				<div class="mi-flap3">
+					<div class="mi-info"></div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-indicator">
+			<p class="scroll-indicator-text">Scroll Down</p>
+			<div class="scroll-indicator-arrow"></div>
+		</div>
+		<script>
+			window.addEventListener('scroll', function () {
+				var scrollIndicator = document.querySelector('.scroll-indicator');
+				if (window.scrollY > 100) {
+					scrollIndicator.style.display = 'none';
+				} else {
+					scrollIndicator.style.display = 'flex';
+				}
+			});
+		</script>
+		<div class="container">
 			<h2 class="title">
-			  <span class="title-word title-word-1">SUNDER</span>
-			  <span class="title-word title-word-2">PANDIT</span>
-			  <span class="title-word title-word-3">|</span>
-			  <span class="title-word title-word-4">I'm</span>
-			  <span class="title-word title-word-4">a</span>
-			  <span class="title-word title-word-4">Stock Market</span>
-			  <span class="title-word title-word-4">Trader</span>
-			  <span class="title-word title-word-4">and</span>
-			  <span class="title-word title-word-4">Also Investor.</span>
-			  <span class="title-word title-word-4">I'm</span>
-			  <span class="title-word title-word-4">Working</span>
-			  <span class="title-word title-word-4">on</span>
-			  <span class="title-word title-word-4">Ed-Tech</span>
-			  <span class="title-word title-word-4">Platform</span>
-			  <span class="title-word title-word-4">Where</span>
-			  <span class="title-word title-word-4">you</span>
-			  <span class="title-word title-word-4">can</span>
-			  <span class="title-word title-word-4">Learn</span>
-			  <span class="title-word title-word-4">High Playing Skills</span>
-			  <span class="title-word title-word-4">and</span>
-			  <span class="title-word title-word-4">Earn</span>
-			  <span class="title-word title-word-4">through</span>
-			  <span class="title-word title-word-4">That</span>
-			  <span class="title-word title-word-4">Skills.</span>
+				<span class="title-word title-word-1">SUNDER</span>
+				<span class="title-word title-word-2">PANDIT</span>
+				<span class="title-word title-word-3">|</span>
+				<span class="title-word title-word-4">I'm</span>
+				<span class="title-word title-word-4">a</span>
+				<span class="title-word title-word-4">Stock Market</span>
+				<span class="title-word title-word-4">Trader</span>
+				<span class="title-word title-word-4">and</span>
+				<span class="title-word title-word-4">Also Investor.</span>
+				<span class="title-word title-word-4">I'm</span>
+				<span class="title-word title-word-4">Working</span>
+				<span class="title-word title-word-4">on</span>
+				<span class="title-word title-word-4">Ed-Tech</span>
+				<span class="title-word title-word-4">Platform</span>
+				<span class="title-word title-word-4">Where</span>
+				<span class="title-word title-word-4">you</span>
+				<span class="title-word title-word-4">can</span>
+				<span class="title-word title-word-4">Learn</span>
+				<span class="title-word title-word-4">High Playing Skills</span>
+				<span class="title-word title-word-4">and</span>
+				<span class="title-word title-word-4">Earn</span>
+				<span class="title-word title-word-4">through</span>
+				<span class="title-word title-word-4">That</span>
+				<span class="title-word title-word-4">Skills.</span>
 			</h2>
-		  </div>
-		  <section class="social">
+		</div>
+		<section class="social">
 			<ul>
-			  <li><a href="https://instagram.com/itz_sunder_pandit143?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-			  <li><a href="https://www.linkedin.com/in/sunder-pandit-850311260" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			  <li><a href="https://www.facebook.com/sunder.pandit.501?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a></li>
-			  <li><a href="https://wa.me/message/NMEJK5EH46B6D1" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-			  <li><a href="mailto:sunderpandit143@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-			</ul> 
-		  </section>		  
-			<footer>
-				<h6>
-					<p class="copyright">&copy; 2023 SunderPandit. All rights reserved.<br> Business Mail :
-						sunderpandit143@gmail.com<br> Made by Unsnap<br> Brands or product names are the
-						trademarks of their respective owners.</p>
-				</h6>
-			</footer>
-	  </body>
-	  
+				<li><a href="https://instagram.com/itz_sunder_pandit143?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i
+							class="fab fa-instagram"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/sunder-pandit-850311260" target="_blank"><i
+							class="fab fa-linkedin"></i></a></li>
+				<li><a href="https://www.facebook.com/sunder.pandit.501?mibextid=ZbWKwL" target="_blank"><i
+							class="fab fa-facebook"></i></a></li>
+				<li><a href="https://wa.me/message/NMEJK5EH46B6D1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				</li>
+				<li><a href="mailto:sunderpandit143@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+		</section>
+		<footer>
+			<h6>
+				<p class="copyright">&copy; 2023 SunderPandit. All rights reserved.<br> Business Mail :
+					sunderpandit143@gmail.com<br> Made by Unsnap<br> Brands or product names are the
+					trademarks of their respective owners.</p>
+			</h6>
+		</footer>
+	</body>
+
 </body>
+
 </html>
